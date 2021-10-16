@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .em_destaque .content {
+    width: 80%;
+  }
+
+  .em_destaque .infos {
+    font-size: 0.9rem;
+  }
+
+  .movie {
+    height: 400px;
+    object-fit: contain;
+  }
+}

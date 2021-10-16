@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <!-- Import Favicon -->
+    <link rel="shortcut icon" href="assets/netflix_logo.png" type="image/x-icon">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- Import Responsive CSS  -->
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="assets/netflix_logo_extendido.png" alt="Logo Netflix Extendido" width="150">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Minha Lista</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="em_destaque">
+            <div class="content">
+                <h1 class="titulo">Lucifer</h1>
+                <p class="infos">
+                    <span class="ano">2016</span>|<span class="idade">16</span>|<span>6 temporadas</span>|<span>Série
+                        dos EUA</span>
+                </p>
+                <p class="descricao">
+                    Entediado com a vida nas trevas, o diabo se muda para Los Angeles, abre um piano-bar e empresta sua
+                    sabedoria a uma investigadora de assassinatos.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="movie-carousel">
+        <div class="owl-carousel">
+            <div class="item">
+                <img class="movie" src="assets/perdida.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/the-silence.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/the-silence2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/1922.png" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/the-men-in-dark.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/assim-na-terra-como-no-inferno.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/interestelar.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/Rogai-Por-Nos-2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/prometheus.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="movie" src="assets/alien-covenant.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- OWL JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+
+        $('.owl-carousel').owlCarousel({
+            dots: false,
+            stagePadding: 50,
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 4500,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>

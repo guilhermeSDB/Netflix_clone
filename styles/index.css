@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+html {
+  --black: #141414;
+  --white: #f9f9f9;
+  --light-gray: #aaa;
+  --lighter-gray: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+}
+
+a {
+  color: var(--light-gray);
+  margin: 1rem;
+}
+
+a:hover {
+  color: var(--lighter-gray);
+}
+
+.em_destaque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/lucifer.jpeg) no-repeat;
+  background-size: cover;
+  background-position: 30% 30%;
+  margin: 0 auto;
+  height: 25rem;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.em_destaque:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.em_destaque .content {
+  color: var(--white);
+  background: transparent;
+  width: 35%;
+  margin: 3.5rem;
+}
+
+.em_destaque .titulo {
+  font-size: 3rem;
+}
+.em_destaque .titulo,
+.em_destaque .descricao {
+  margin: 1rem 0;
+}
+
+.em_destaque .descricao {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.em_destaque .infos {
+  color: var(--light-gray);
+}
+
+.em_destaque span {
+  margin: 1rem;
+}
+
+.em_destaque .ano {
+  margin-left: 0rem;
+}
+
+.em_destaque .idade {
+  font-size: 0.9rem;
+  border: 1px solid;
+  padding: 0.2rem;
+}
+
+.movie {
+  border: 2px solid transparent;
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+  display: block;
+  transition: border 0.3s;
+}
+
+.movie-carousel {
+  max-height: 500px;
+}
+
+.movie:hover {
+  border: 2px solid white;
+  transition: border 0.3s;
+}
