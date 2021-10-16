@@ -8,6 +8,11 @@
     justify-content: center;
   }
 
+  .em_destaque {
+    background-size: cover;
+    background-position: top;
+  }
+
   .em_destaque .content {
     width: 80%;
   }
@@ -19,5 +24,12 @@
   .movie {
     height: 400px;
     object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .movie {
+    max-width: 600px;
+    height: 40rem;
   }
 }
